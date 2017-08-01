@@ -65,14 +65,13 @@ function save(){
     var save = {
     dollars: dollars,
     offshoreDev: offshoreDev,
-
-    backendDev: backendDev,
-    projectManager: projectManager,
     frontendDev: frontendDev,    
-    prestige: prestige
+    backendDev: backendDev,
+    projectManager: projectManager,   
+    //prestige: prestige
 }
     localStorage.setItem("save",JSON.stringify(save));
-    ga('send', 'event', 'My Game', 'Save');
+    ('send', 'event', 'My Game', 'Save');
 }
 
 function load(){
